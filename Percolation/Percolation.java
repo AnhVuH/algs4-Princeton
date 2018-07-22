@@ -1,4 +1,4 @@
-import edu.princeton.cs.algs4.StdRandom;
+//import edu.princeton.cs.algs4.StdRandom;
 import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 
 import edu.princeton.cs.algs4.StdIn;
@@ -79,8 +79,34 @@ public class Percolation{
             throw new IllegalArgumentException();
         }
         int idSite = (row-1)*size + col;
-        if(uf.connected(idSite, idTopSite)){
-            isFull[idSite] = true;
+        // if(uf.connected(idSite, idTopSite)){
+        //     isFull[idSite] = true;
+        // }
+        if(isOpen[idSite]){
+            if (col >1){
+                if(isFull[idSite-1]){
+                    isFull[idSite]= true;
+                    return isFull[idSite];
+                }
+            }
+            if(col <size){
+                if(isFull[idSite+1]){
+                    isFull[idSite]= true;
+                    return isFull[idSite];
+                }
+            }
+            if(row >1){
+                if(isFull[idSite-size]){
+                    isFull[idSite]= true;
+                    return isFull[idSite];
+                }
+            }
+            if(row <size){
+                if(isFull[idSite+size]){
+                    isFull[idSite]= true;
+                    return isFull[idSite];
+                }
+            }
         }
         return isFull[idSite];
     }
