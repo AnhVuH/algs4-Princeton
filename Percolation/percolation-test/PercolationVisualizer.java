@@ -37,11 +37,13 @@ public class PercolationVisualizer {
 
         // draw n-by-n grid
         int opened = 0;
+        int full_open =0;
         for (int row = 1; row <= n; row++) {
             for (int col = 1; col <= n; col++) {
                 if (perc.isFull(row, col)) {
                     StdDraw.setPenColor(StdDraw.BOOK_LIGHT_BLUE);
                     opened++;
+                    full_open++;
                 }
                 else if (perc.isOpen(row, col)) {
                     StdDraw.setPenColor(StdDraw.WHITE);
@@ -57,6 +59,7 @@ public class PercolationVisualizer {
         StdDraw.setFont(new Font("SansSerif", Font.PLAIN, 12));
         StdDraw.setPenColor(StdDraw.BLACK);
         StdDraw.text(0.25*n, -0.025*n, opened + " open sites");
+        StdDraw.text(0.5*n, -0.05*n, full_open + " full open sites");
         if (perc.percolates()) StdDraw.text(0.75*n, -0.025*n, "percolates");
         else                   StdDraw.text(0.75*n, -0.025*n, "does not percolate");
 
@@ -82,5 +85,6 @@ public class PercolationVisualizer {
             StdDraw.show();
             StdDraw.pause(DELAY);
         }
+
     }
 }
