@@ -39,7 +39,7 @@ public class Percolation{
             uf.union(idSite, idTopSite);
             uf_full.union(idSite,idTopSite);
         }
-        else if(row==size){
+        if(row==size){
             uf.union(idSite, idBotSite);
         }
         if(col >1){
