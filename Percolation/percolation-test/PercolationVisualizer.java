@@ -58,7 +58,7 @@ public class PercolationVisualizer {
         // write status text
         StdDraw.setFont(new Font("SansSerif", Font.PLAIN, 12));
         StdDraw.setPenColor(StdDraw.BLACK);
-        StdDraw.text(0.25*n, -0.025*n, opened + " open sites");
+        StdDraw.text(0.25*n, -0.025*n, perc.numberOfOpenSites() + " open sites");
         StdDraw.text(0.5*n, -0.05*n, full_open + " full open sites");
         if (perc.percolates()) StdDraw.text(0.75*n, -0.025*n, "percolates");
         else                   StdDraw.text(0.75*n, -0.025*n, "does not percolate");
@@ -80,7 +80,11 @@ public class PercolationVisualizer {
         while (!in.isEmpty()) {
             int i = in.readInt();
             int j = in.readInt();
+
             perc.open(i, j);
+            // StdOut.println("row: "+i);
+            // StdOut.println("col: "+j);
+            // StdOut.println(perc.isFull(i, j));
             draw(perc, n);
             StdDraw.show();
             StdDraw.pause(DELAY);
