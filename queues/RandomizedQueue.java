@@ -62,14 +62,13 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
     }
 
     private class ListIterator implements Iterator<Item>{
-        RandomizedQueue<Item> newQueue = new RandomizedQueue<>();
-        int[] array;
+        RandomizedQueue<Item> newQueue ;
         public ListIterator(){
-            array = StdRandom.permutation(size);
-
-            for(int i = 0; i<array.length; i++){
-                newQueue.enqueue(queue[array[i]]);
+            newQueue = new RandomizedQueue<>();
+            for(int i = 0; i<size; i++){
+                newQueue.enqueue(queue[i]);
             }
+
         }
         @Override
         public boolean hasNext() {
@@ -81,7 +80,8 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
             if(!hasNext()){
                 throw new NoSuchElementException();
             }
-            return newQueue.dequeue();
+            Item item = newQueue.dequeue();
+            return item;
         }
 
         @Override

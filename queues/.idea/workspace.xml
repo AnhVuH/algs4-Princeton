@@ -51,8 +51,20 @@
       <file leaf-file-name="RandomizedQueue.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/RandomizedQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="43" column="41" lean-forward="true" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
+            <state relative-caret-position="-63">
+              <caret line="64" column="40" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Permutation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Permutation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -91,6 +103,7 @@
         <option value="$PROJECT_DIR$/PercolationStats.java" />
         <option value="$PROJECT_DIR$/Deque.java" />
         <option value="$PROJECT_DIR$/TestDeque.java" />
+        <option value="$PROJECT_DIR$/Permutation.java" />
         <option value="$PROJECT_DIR$/RandomizedQueue.java" />
       </list>
     </option>
@@ -166,7 +179,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestDeque">
+  <component name="RunManager" selected="Application.TestRandomizedQueue">
     <configuration name="InteractivePercolationVisualizer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="InteractivePercolationVisualizer" />
       <module name="Algorithms, Part I" />
@@ -178,8 +191,8 @@
       <option name="PROGRAM_PARAMETERS" value="2 1" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
     </configuration>
-    <configuration name="TestDeque" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TestDeque" />
+    <configuration name="TestRandomizedQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestRandomizedQueue" />
       <module name="Algorithms, Part I" />
       <option name="PROGRAM_PARAMETERS" value="distinct.txt" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -228,14 +241,14 @@
     <list>
       <item itemvalue="Application.Percolation" />
       <item itemvalue="Application.InteractivePercolationVisualizer" />
-      <item itemvalue="Application.TestDeque" />
+      <item itemvalue="Application.TestRandomizedQueue" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestDeque" />
+        <item itemvalue="Application.TestRandomizedQueue" />
         <item itemvalue="Application.InteractivePercolationVisualizer" />
         <item itemvalue="Application.Percolation" />
-        <item itemvalue="Application.TestDeque" />
+        <item itemvalue="Application.TestRandomizedQueue" />
         <item itemvalue="Application.InteractivePercolationVisualizer" />
       </list>
     </recent_temporary>
@@ -254,18 +267,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" show_stripe_button="false" weight="0.329927" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49153647" weight="0.2872777" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.48958334" weight="0.2872777" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5058594" side_tool="true" visible="true" weight="0.31874144" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5078125" side_tool="true" visible="true" weight="0.31874144" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49414062" visible="true" weight="0.31874144" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4921875" visible="true" weight="0.31874144" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" x="374" y="226" width="659" height="530" id="Terminal" order="10" sideWeight="0.49774164" weight="0.4386921" />
       <window_info id="Capture Tool" order="2" />
@@ -369,13 +382,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Permutation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" selection-start-column="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mediumTale.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -418,10 +424,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Permutation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/RandomizedQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="43" column="41" lean-forward="true" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
+        <state relative-caret-position="-63">
+          <caret line="64" column="40" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
