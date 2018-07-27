@@ -41,11 +41,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         }
         int randomPos = StdRandom.uniform(size);
         Item removeItem = queue[randomPos];
-        if (size > 1){
-            for (int i = randomPos; i< size -1; i++){
-                queue[i] = queue[i+1];
-            }
-        }
+        queue[randomPos] = queue[size-1];
         queue[--size]= null;
         if(size >0 && size == queue.length/4){
             resize(queue.length/2);
