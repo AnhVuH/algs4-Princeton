@@ -68,7 +68,6 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
             for(int i = 0; i<size; i++){
                 newQueue.enqueue(queue[i]);
             }
-
         }
         @Override
         public boolean hasNext() {
@@ -80,7 +79,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
             if(!hasNext()){
                 throw new NoSuchElementException();
             }
-            Item item = newQueue.dequeue();
+             Item item = newQueue.dequeue();
             return item;
         }
 
