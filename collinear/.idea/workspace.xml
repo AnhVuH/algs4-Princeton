@@ -36,12 +36,8 @@
       <file leaf-file-name="BruteCollinearPoints.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BruteCollinearPoints.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="49" column="17" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
-              <folding>
-                <element signature="e#2131#2132#0" expanded="true" />
-                <element signature="e#2170#2171#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="100">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
         </entry>
@@ -49,11 +45,29 @@
       <file leaf-file-name="Point.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Point.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="114" selection-start-line="114" selection-end-line="114" />
+            <state relative-caret-position="260">
+              <caret line="122" column="14" lean-forward="true" selection-start-line="122" selection-start-column="14" selection-end-line="122" selection-end-column="14" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FastCollinearPoints.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FastCollinearPoints.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="935">
+              <caret line="76" column="50" selection-start-line="76" selection-start-column="50" selection-end-line="76" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestFast.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestFast.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-68">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -91,11 +105,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="75" />
-    <option name="y" value="60" />
-    <option name="width" value="1550" />
-    <option name="height" value="925" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="77" />
+    <option name="y" value="12" />
+    <option name="width" value="1335" />
+    <option name="height" value="870" />
   </component>
   <component name="ProjectView">
     <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
@@ -111,7 +125,6 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
-      <pane id="ProjectPane" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
@@ -124,6 +137,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -215,19 +229,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" show_stripe_button="false" weight="0.329927" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="13" weight="0.29166666" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49283853" weight="0.28864568" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.23177083" side_tool="true" visible="true" weight="0.25854993" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.3294271" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7682292" weight="0.25854993" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7682292" visible="true" weight="0.25854993" />
       <window_info anchor="bottom" id="CheckStyle" order="11" sideWeight="0.49736008" weight="0.3174387" />
       <window_info anchor="bottom" x="374" y="226" width="659" height="530" id="Terminal" order="10" sideWeight="0.49774164" weight="0.4386921" />
       <window_info id="Capture Tool" order="2" />
@@ -237,8 +251,9 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="3" show_stripe_button="false" sideWeight="0.5007299" side_tool="true" weight="0.25408348" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49934897" weight="0.39808482" />
+      <window_info id="Favorites" order="3" show_stripe_button="false" sideWeight="0.5007299" side_tool="true" weight="0.25408348" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49283853" weight="0.28864568" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="PMD" order="12" sideWeight="0.49688336" weight="0.32909605" />
@@ -249,16 +264,16 @@
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="13" weight="0.29166666" />
       <window_info anchor="bottom" id="CheckStyle" order="11" sideWeight="0.49736008" weight="0.3240469" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.36255708" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49927008" visible="true" weight="0.18913858" />
       <window_info id="Structure" order="1" show_stripe_button="false" sideWeight="0.5007299" side_tool="true" weight="0.25408348" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" show_stripe_button="false" weight="0.329927" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49828178" weight="0.3201635" />
       <window_info id="Designer" order="2" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -267,10 +282,10 @@
       <window_info anchor="bottom" x="374" y="226" width="659" height="530" id="Terminal" order="10" weight="0.30938417" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5026399" side_tool="true" weight="0.32412523" />
       <window_info anchor="bottom" id="PMD" order="12" sideWeight="0.49688336" weight="0.32909605" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49624062" weight="0.30498534" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" order="13" weight="0.29166666" />
+      <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.36255708" />
       <window_info id="Favorites" order="3" show_stripe_button="false" sideWeight="0.5007299" side_tool="true" weight="0.25408348" />
     </layout-to-restore>
   </component>
@@ -459,13 +474,6 @@
     <entry file="file://$PROJECT_DIR$/input40.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/LineSegment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/input56.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -486,13 +494,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/input10.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestFast.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/input20.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -516,35 +517,41 @@
     <entry file="file://$PROJECT_DIR$/input80.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/LineSegment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-206">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Point.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="114" selection-start-line="114" selection-end-line="114" />
+        <state relative-caret-position="260">
+          <caret line="122" column="14" lean-forward="true" selection-start-line="122" selection-start-column="14" selection-end-line="122" selection-end-column="14" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/TestFast.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/FastCollinearPoints.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="85" />
-          <folding>
-            <element signature="e#3708#3709#0" expanded="true" />
-            <element signature="e#3747#3748#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="935">
+          <caret line="76" column="50" selection-start-line="76" selection-start-column="50" selection-end-line="76" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BruteCollinearPoints.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="49" column="17" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
-          <folding>
-            <element signature="e#2131#2132#0" expanded="true" />
-            <element signature="e#2170#2171#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="100">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
