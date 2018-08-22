@@ -1,4 +1,4 @@
-/* *****************************************************************************
+/******************************************************************************
  *  Name:
  *  Date:
  *  Description:
@@ -45,9 +45,14 @@ public class Board {
       for(int i=0; i<dimension1d; i++){
 
           if(blocks[i]!=(i+1)&& blocks[i]!=0){
-                int dRow = Math.abs((i+1-blocks[i])/dimension);
-                int dCol = Math.abs((i+1-blocks[i])%dimension);
-                manhattan += dCol+ dRow;
+              int rowBlock = i/dimension;
+              int colBlock = i%dimension;
+              int rowPos = (blocks[i]-1)/dimension;
+              int colPos = (blocks[i]-1)%dimension;
+              manhattan += Math.abs(rowBlock-rowPos) + Math.abs(colBlock-colPos);
+                // int dRow = Math.abs((i+1-blocks[i])/dimension);
+                // int dCol = Math.abs((i+1-blocks[i])%dimension);
+                // manhattan += dCol+ dRow;
           }
       }
       return manhattan;

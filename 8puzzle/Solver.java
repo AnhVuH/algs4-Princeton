@@ -1,4 +1,4 @@
-/* *****************************************************************************
+/******************************************************************************
  *  Name:
  *  Date:
  *  Description:
@@ -17,7 +17,7 @@ public class Solver {
 
     private boolean isSolvable;
     private int moves;
-    private Stack<Board> solutions = new Stack<>();
+    private Stack<Board> solutions = new Stack<Board>();
 
     public Solver (Board initial){
         moves =0;
@@ -26,16 +26,24 @@ public class Solver {
             throw  new IllegalArgumentException();
         }
 
-        priorityQueue.insert(new SearchNode(0,initial ,null ));
+        SearchNode initialNode = new SearchNode(0,initial ,null );
+
+        priorityQueue.insert(initialNode);
         twinPriorityQueue.insert(new SearchNode(0,initial.twin() ,null ));
-        Board prevBoard = null;
+
 
 
         while(true){
+            // for (SearchNode node:priorityQueue) {
+            //     StdOut.println(node.currentBoard);
+            //     StdOut.println("manhattan: " + node.currentBoard.manhattan());
+            // }
+
             SearchNode minNode =  priorityQueue.delMin();
             Board minNodeBoard = minNode.currentBoard;
 
             moves = minNode.move;
+
 
             SearchNode minTwinNode = twinPriorityQueue.delMin();
             Board minTwinNodeBoard = minTwinNode.currentBoard;
@@ -46,39 +54,40 @@ public class Solver {
                 SearchNode currentNode = minNode;
                 while(true){
                     solutions.push(currentNode.currentBoard);
-                    if(currentNode.currentBoard.equals(initial)){
+                    if(currentNode==initialNode){
                         break;
                     }
-                    currentNode =currentNode.prevNode;
-                    // StdOut.println(currentNode.currentBoard);
+                    currentNode = currentNode.prevNode;
+
                 }
                 break;
             }
             else if(minTwinNodeBoard.isGoal()){
+                moves = -1;
                 break;
             }
-            else if(minNode.move==0){
+            else if(moves ==0){
                 for (Board board :minNodeBoard.neighbors()) {
-                    SearchNode node = new SearchNode(moves+1,board ,minNode);
-                    priorityQueue.insert(node);
+                        SearchNode node = new SearchNode(moves +1,board ,minNode);
+                        priorityQueue.insert(node);
 
                 }
                 for (Board board :minTwinNodeBoard.neighbors()) {
-                    SearchNode node = new SearchNode(moves+1,board ,minTwinNode);
-                    twinPriorityQueue.insert(node);
-
+                        SearchNode node = new SearchNode(moves +1,board ,minTwinNode);
+                        twinPriorityQueue.insert(node);
                 }
+
             }
             else{
                 for (Board board :minNodeBoard.neighbors()) {
                     if(!board.equals(minNode.prevNode.currentBoard)){
-                        SearchNode node = new SearchNode(moves+1,board ,minNode);
+                        SearchNode node = new SearchNode(moves +1,board ,minNode);
                         priorityQueue.insert(node);
                     }
                 }
                 for (Board board :minTwinNodeBoard.neighbors()) {
                     if(!board.equals(minTwinNode.prevNode.currentBoard)){
-                        SearchNode node = new SearchNode(moves+1,board ,minTwinNode);
+                        SearchNode node = new SearchNode(moves +1,board ,minTwinNode);
                         twinPriorityQueue.insert(node);
                     }
                 }
@@ -90,13 +99,16 @@ public class Solver {
     private class SearchNode {
         SearchNode prevNode;
         Board currentBoard;
-        int move;
         int priority;
+        int move;
+        int manhattan;
         public SearchNode(int move, Board currentboard, SearchNode prevNode){
             this.move = move;
             this.currentBoard = currentboard;
             this.prevNode = prevNode;
-            this.priority = currentboard.manhattan()+ move;
+            this.manhattan = currentboard.manhattan();
+            this.priority = this.manhattan+ move;
+
         }
 
 
@@ -105,11 +117,14 @@ public class Solver {
 
         @Override
         public int compare(SearchNode node1, SearchNode node2) {
-            int subPriority =node1.priority-node2.priority;
-            if(subPriority!=0) return subPriority;
-            else return node1.currentBoard.manhattan()-node2.currentBoard.manhattan();
-
+            int subPriority = node1.priority-node2.priority;
+            if(subPriority!=0){
+                return subPriority;
+            }
+            else return node1.manhattan - node2.manhattan;
         }
+
+
     }
 
 
@@ -147,6 +162,7 @@ public class Solver {
             for (Board board : solver.solution()){
                 StdOut.println(board);
             }
+
 
         }
     }
